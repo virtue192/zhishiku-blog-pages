@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /llms.txt
+Allow: /api/ai.json
+Allow: /.well-known/
+Disallow: /admin
+Disallow: /api/articles
+Disallow: /api/about
+
+User-agent: *
+Allow: /rss.xml
+Allow: /sitemap-index.xml
+
+Sitemap: https://zhishiku.blog/sitemap-index.xml

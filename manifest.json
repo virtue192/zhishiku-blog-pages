@@ -1,0 +1,22 @@
+{
+  "name": "Life Ledger OS",
+  "short_name": "Life Ledger",
+  "description": "Personal asset management system & independent magazine blog",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf9f6",
+  "theme_color": "#0d9488",
+  "icons": [
+    {
+      "src": "/pwa-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

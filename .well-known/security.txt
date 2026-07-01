@@ -1,0 +1,3 @@
+Contact: hello@example.com
+Preferred-Languages: zh-CN, en
+Canonical: https://zhishiku.blog/.well-known/security.txt

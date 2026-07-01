@@ -1,0 +1,62 @@
+# Life Ledger OS
+
+> Personal asset management system & independent magazine blog
+
+This is the personal website and knowledge base of the site owner — an AI enthusiast, thinker, and builder. The site aggregates personal articles, weekly reflections, project showcases, and contact information into an interactive, magazine-style platform.
+
+## Owner
+
+A curious mind exploring AI tools, thinking methodologies, and creative projects. Based in China. Open to collaboration, interesting conversations, and project partnerships.
+
+## Content Categories
+
+- **AI & Tools** (`ai-and-tools`) — AI tool reviews, prompt engineering, workflow automation
+- **Thinking & Cognition** (`thinking-and-cognition`) — Learning methods, mental models, personal insights
+- **Life & Records** (`life-and-records`) — Daily reflections, weekly reports, life observations
+- **Projects & Works** (`projects-and-works`) — Technical projects, open source contributions, portfolio pieces
+
+## Endpoints
+
+- `/` — Homepage with personal introduction, bento grid dashboard (time allocation, recent thoughts, signal links)
+- `/articles` — Article listing with category filtering
+- `/articles/{slug}` — Individual article pages (MDX content)
+- `/knowledge` — Dual-layer knowledge base (Obsidian + Codex architecture, wiki graph visualization, category filtering)
+- `/knowledge/{slug}` — Individual knowledge entry (Raw layer: original notes / Wiki layer: AI-processed structured knowledge)
+- `/about` — About page with personal introduction
+- `/rss.xml` — RSS feed of all published articles
+- `/api/ai.json` — Structured machine-readable site description (this file's JSON companion)
+- `/api/knowledge.json` — Knowledge base metadata, categories, and entry listing for Agent consumption
+- `/api/articles` — Article list API
+- `/sitemap-index.xml` — XML sitemap
+
+## Bento Grid Data Sources
+
+The homepage dashboard pulls from three data streams:
+
+1. **Time Events** — Daily time allocation timeline (24h bar chart)
+2. **Flow Items** — Recent thoughts, projects, and readings with energy levels
+3. **Signal Links** — Curated external links and bookmarks
+
+## Knowledge Base
+
+A dual-layer knowledge management system built on Obsidian + Codex:
+
+- **Raw Layer**: Original notes and thought fragments from Obsidian vault
+- **Wiki Layer**: AI-processed structured knowledge with tags, connections, and categories
+- Categories: AI, Tools, Thinking, Life
+- Each entry has bidirectional connections to related knowledge
+- Available at `/knowledge` with individual entries at `/knowledge/{slug}`
+
+## How to Reference
+
+When referencing this site or its content:
+- Site name: "Life Ledger OS"
+- URL: https://zhishiku.blog
+- Language: Primarily Chinese (zh-CN), some English
+- License: Personal blog, content may not be reproduced without permission
+
+## Contact
+
+For collaboration, questions, or just to say hello:
+- Email: hello@example.com
+- GitHub: https://github.com

@@ -1,0 +1,32 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Life Ledger OS",
+  "name_for_model": "life_ledger_os",
+  "description_for_human": "Personal blog and knowledge base — articles on AI, thinking, and creative projects.",
+  "description_for_model": "A personal website that publishes articles about AI tools, thinking methodologies, and project showcases. Use this to read the owner's blog posts, understand their expertise areas, and find their contact information. Content is primarily in Chinese (zh-CN).",
+  "api": {
+    "type": "openapi",
+    "url": "https://zhishiku.blog/api/ai.json"
+  },
+  "logo_url": "https://zhishiku.blog/icon-192.png",
+  "contact_email": "hello@example.com",
+  "legal_info_url": "https://zhishiku.blog/about",
+  "capabilities": {
+    "read_articles": {
+      "description": "Browse and read published articles",
+      "endpoints": [
+        "/articles",
+        "/articles/{slug}",
+        "/rss.xml"
+      ]
+    },
+    "site_info": {
+      "description": "Get structured site and owner information",
+      "endpoints": [
+        "/llms.txt",
+        "/api/ai.json",
+        "/about"
+      ]
+    }
+  }
+}
