@@ -1,0 +1,23 @@
+---
+import SpaceExperience from '../components/space/SpaceExperience';
+import '../styles/space.css';
+const base = import.meta.env.BASE_URL;
+const canonical = new URL(base, Astro.site);
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta name="description" content="给还没发生的故事，留一点位置。"/>
+    <meta name="theme-color" content="#eceeeb"/>
+    <meta name="robots" content="noindex, nofollow"/>
+    <title>慢慢 · Life Ledger — 个人空间</title>
+    <link rel="canonical" href={canonical}/>
+    <link rel="icon" type="image/svg+xml" href={`${base}space-mark.svg`}/>
+  </head>
+  <body class="space-body">
+    <SpaceExperience siteBase={base} staticSite client:load/>
+    <noscript><p class="no-script">这个空间需要 JavaScript 来启用交互。 / Enable JavaScript to explore this space.</p></noscript>
+  </body>
+</html>

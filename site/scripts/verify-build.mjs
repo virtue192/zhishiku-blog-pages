@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import { readdir, readFile } from 'node:fs/promises';
+const html = await readFile('dist/index.html', 'utf8');
+assert.ok(html.includes('staticSite'), 'Static subscription mode must be enabled.');
+assert.ok(html.includes('/zhishiku-blog-pages/space-mark.svg'), 'Favicon must honor the Pages base.');
+assert.ok(html.includes('https://virtue192.github.io/zhishiku-blog-pages/'), 'Canonical URL must match the existing site.');
+const allowed = new Set(['index.html', '_astro', 'space-mark.svg']);
+for (const entry of await readdir('dist')) assert.ok(allowed.has(entry), `Unexpected public output: ${entry}`);
+assert.ok(!html.includes('127.0.0.1') && !html.includes('localhost'), 'No local service address may be published.');
+console.log('Static build verified: homepage, own assets, Pages base and disabled email delivery.');
